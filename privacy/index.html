@@ -1,0 +1,191 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0b6e8a">
+  <meta name="description" content="Privacy policy for the Particle Wi-Fi app by Gregory Maendel.">
+  <title>Particle Wi-Fi Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      --accent: #0b6e8a;
+      --ink: #172033;
+      --muted: #5b6778;
+      --surface: #ffffff;
+      --background: #eef4f6;
+      --border: #dce6ea;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--ink);
+    }
+    header {
+      padding: 3.5rem 1.25rem 4.5rem;
+      background:
+        radial-gradient(circle at 85% 15%, rgb(86 214 230 / 35%), transparent 28%),
+        linear-gradient(135deg, #08506a, #0b84a5);
+      color: white;
+    }
+    header div, main, footer {
+      width: min(48rem, calc(100% - 2rem));
+      margin: 0 auto;
+    }
+    .eyebrow {
+      margin: 0 0 .75rem;
+      font-size: .8rem;
+      font-weight: 800;
+      letter-spacing: .12em;
+      text-transform: uppercase;
+      opacity: .85;
+    }
+    h1 {
+      margin: 0;
+      font-size: clamp(2.25rem, 8vw, 4rem);
+      line-height: 1;
+    }
+    header p {
+      max-width: 38rem;
+      margin: 1rem 0 0;
+      font-size: 1.1rem;
+      line-height: 1.55;
+      opacity: .92;
+    }
+    main {
+      margin-top: -2rem;
+      margin-bottom: 2rem;
+      padding: clamp(1.35rem, 4vw, 2.75rem);
+      border: 1px solid var(--border);
+      border-radius: 1.5rem;
+      background: var(--surface);
+      box-shadow: 0 1.25rem 3rem rgb(21 72 91 / 10%);
+    }
+    h2 {
+      margin: 2.25rem 0 .65rem;
+      font-size: 1.35rem;
+    }
+    h2:first-child { margin-top: 0; }
+    p, li {
+      color: var(--muted);
+      line-height: 1.65;
+    }
+    ul { padding-left: 1.3rem; }
+    a { color: var(--accent); }
+    .summary {
+      padding: 1rem 1.1rem;
+      border-left: .3rem solid var(--accent);
+      border-radius: .4rem;
+      background: rgb(11 110 138 / 8%);
+    }
+    footer {
+      padding: 0 0 3rem;
+      color: var(--muted);
+      font-size: .9rem;
+      text-align: center;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --accent: #5cc8e0;
+        --ink: #edf6f9;
+        --muted: #b8c9d0;
+        --surface: #15262d;
+        --background: #0e1a1f;
+        --border: #2c4550;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div>
+      <p class="eyebrow">Particle Wi-Fi</p>
+      <h1>Privacy Policy</h1>
+      <p>How the Particle Wi-Fi app handles the information it uses to set up Wi-Fi on Particle devices.</p>
+    </div>
+  </header>
+
+  <main>
+    <h2>Overview</h2>
+    <p class="summary">
+      Particle Wi-Fi is developed and published by Gregory Maendel. The app
+      connects to a nearby Particle device over Bluetooth and sends it the
+      Wi-Fi network you choose. It has no accounts, ads, or analytics, and it
+      does not send any information to the developer or to any server the
+      developer operates. We do not collect, sell, or share personal
+      information.
+    </p>
+    <p>
+      This policy covers Particle Wi-Fi on Android and on Apple devices.
+    </p>
+
+    <h2>Information the app handles</h2>
+    <p>Everything below stays on your phone or travels only between your phone and your Particle device.</p>
+    <ul>
+      <li><strong>Nearby Particle devices:</strong> the Bluetooth names, identifiers, and signal strength of Particle devices in setup mode, used to list them on screen. This list is not saved.</li>
+      <li><strong>Device setup code:</strong> the code on the Particle device's sticker, which you scan or type in. The app uses it to open an encrypted Bluetooth session with that device. It is saved only on your phone, encrypted with a key held in the Android Keystore or the Apple Keychain, so you don't have to scan it again when you reconnect to the same device.</li>
+      <li><strong>Wi-Fi networks and password:</strong> the list of networks comes from the Particle device's own scan. The network name and password you enter are sent only to your Particle device, over the encrypted Bluetooth session. The app does not save your Wi-Fi password.</li>
+      <li><strong>Setup status:</strong> information the Particle device reports during setup is shown on screen and is not saved.</li>
+    </ul>
+
+    <h2>Permissions</h2>
+    <ul>
+      <li><strong>Bluetooth (Nearby devices on Android):</strong> used to find and connect to Particle devices. On Android 12 and later, the app declares that it does not use Bluetooth scanning to work out your location. On Android 11 and earlier, Android requires location permission for any Bluetooth scan; the app does not read or record your location.</li>
+      <li><strong>Camera:</strong> on Android, the app uses Google Play services' code scanner, so it never receives camera permission or camera images, only the scanned code. On Apple devices, the app uses the camera to read the code; camera frames are processed on the device and are not saved or sent anywhere.</li>
+    </ul>
+
+    <h2>Services provided by others</h2>
+    <ul>
+      <li><strong>Google Play services code scanner (Android):</strong> Google provides the scanner screen and processes the scan on your device. Google may collect limited diagnostic and usage information about the scanner, as described in the <a href="https://policies.google.com/privacy">Google Privacy Policy</a>.</li>
+      <li><strong>App stores:</strong> Google Play and the App Store may give the developer aggregated statistics, such as install counts and crash reports, as described in their own privacy policies.</li>
+      <li><strong>Particle:</strong> after setup, your Particle device joins your Wi-Fi network and connects to Particle's cloud on its own. That connection is between your device and Particle, and it is covered by Particle's terms and privacy policy, not this one. Particle Wi-Fi is an independent app and is not affiliated with or endorsed by Particle Industries, Inc.</li>
+    </ul>
+
+    <h2>Sharing</h2>
+    <p>
+      The app does not share information with anyone. We do not sell or rent
+      personal information, and we do not use it for advertising.
+    </p>
+
+    <h2>Retention and deletion</h2>
+    <p>
+      Saved setup codes stay on your phone until you uninstall the app or
+      clear its storage (on Android: <strong>Settings → Apps → Particle Wi-Fi
+      → Storage → Clear storage</strong>). The app also deletes a saved code on
+      its own if it stops working for that device. There is no account to
+      delete, and the developer holds no information about you.
+    </p>
+
+    <h2>Security</h2>
+    <p>
+      The Bluetooth session with your Particle device is encrypted with a key
+      agreed using the device's setup code, so your Wi-Fi password is not sent
+      in readable form. Saved setup codes are encrypted on your phone. No
+      method of transmission or storage is completely secure, so keep your
+      phone and your Particle devices secure too.
+    </p>
+
+    <h2>Children</h2>
+    <p>
+      Particle Wi-Fi does not collect personal information from anyone,
+      including children under 13.
+    </p>
+
+    <h2>Changes to this policy</h2>
+    <p>
+      We may update this policy when the app or applicable requirements change.
+      The effective date below will be updated when changes are published.
+    </p>
+
+    <h2>Contact</h2>
+    <p>
+      Questions or privacy requests may be sent to Gregory Maendel at
+      <a href="mailto:GMaendel@gmail.com">GMaendel@gmail.com</a>.
+    </p>
+  </main>
+
+  <footer>Effective November 22, 2026 · Gregory Maendel</footer>
+</body>
+</html>
